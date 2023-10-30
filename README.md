@@ -4,17 +4,27 @@
 
 Global and per RGI region aggregated glacier volume projections of three glacier models using all to us available GCMs until 2300 from CMIP5 and CMIP6. 
 
-|![CMIP6 GCMs until 2300](https://hackmd.io/_uploads/rkc3xrDTh.png)|
-|:--:| 
-|![CMIP5 GCMs until 2300](https://hackmd.io/_uploads/Bkp9UA_a2.png)|
-|:--:| 
-| *Figure 1: Global mean temperature changes of used CMIP6 and CMIP5 GCMs until 22300. For reference, the grey lines, represent the gcm ensemble until 2100.* |
-
 The three glacier models are:
 
 - PyGEM-OGGM [(model similar as in Rounce et al, 2023)](https://doi.org/10.1126/science.abo1324) : CMIP5 and CMIP6
 - OGGM [(exact same files as the OGGM standard projection files v1.6.1)](https://zenodo.org/records/8286065) : CMIP5 and CMIP6
 - GloGEM ([model similar as in Huss and Hock, 2015](https://doi.org/10.3389/feart.2015.00054); but e.g. with glacier-per glacier calibration using [Hugonnet et al., 2021](https://doi.org/10.1038/s41586-021-03436-z)) : only CMIP6, one SSP534-over GCM is missing
+
+----
+
+If you use the data or the figures, please cite the dataset and the figures as following:
+*XXX (2023). XXXX: v1.0 (v1.0). Zenodo. https://doi.org/XXX*
+
+----
+
+The used GCMs are shown below:
+
+|![CMIP6 GCMs until 2300](https://hackmd.io/_uploads/rkc3xrDTh.png)|
+|:--:| 
+|![CMIP5 GCMs until 2300](https://hackmd.io/_uploads/Bkp9UA_a2.png)|
+| *Figure 1: Global mean temperature changes of used CMIP6 and CMIP5 GCMs until 22300. For reference, the grey lines, represent the gcm ensemble until 2100.* |
+
+
 
 We have saved the aggregated output in csv-files in subfolders inside of [glacier_model_csv_files/](glacier_model_csv_files/) for every RGI region or globally. In every csv file, all GCM projections from one scenario (e.g. `ssp370.csv`) are given as different columns, where each of the rows shows one year from 2000 until 2300 (2000 means glacier state from January 1st 2000). Attention, some of the GCM names in some glacier models have only upper letters. The folder structure is the following: `{glac_model}/{var}/{cmip}/{year}/RGI{id}/{scenario}.csv`
 - {glac_model} is the glacier model, e.g. GloGEM
@@ -29,12 +39,7 @@ matched the [Farinotti et al. (2019) ice thickness](https://doi.org/10.1038/s415
 In case of questions, please ask. 
 
 
-----
 
-If you use the data or the figures, please cite the dataset and the figures as following:
-*XXX (2023). XXXX: v1.0 (v1.0). Zenodo. https://doi.org/XXX*
-
-----
 
 
 In the folder, [figures/]([figures/), you can find different figure drafts and additional analysis figures that have been created for the ICCI State of the Cryosphere report. All figures have been plotted by the [final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb notebook](final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb).
