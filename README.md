@@ -1,6 +1,7 @@
 # Glacier model projections of CMIP5 and CMIP6 GCMs until 2300
 
-[![DOI](https://zenodo.org/badge/DOI/XX.svg)](https://doi.org/XX)
+[![DOI](https://zenodo.org/badge/711994513.svg)](https://zenodo.org/doi/10.5281/zenodo.10055416)
+
 
 Global and per RGI region aggregated glacier volume projections of three glacier models using all to us available GCMs until 2300 from CMIP5 and CMIP6. 
 
@@ -13,7 +14,7 @@ The three glacier models are:
 ----
 
 If you use the data or the figures, please cite the dataset and the figures as following:
-*XXX (2023). XXXX: v1.0 (v1.0). Zenodo. https://doi.org/XXX*
+*XXX (2023). XXXX: vXX (vXX). Zenodo. https://zenodo.org/doi/10.5281/zenodo.10055416*
 
 ----
 
