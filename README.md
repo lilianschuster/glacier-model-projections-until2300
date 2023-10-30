@@ -4,8 +4,8 @@
 
 Global and per RGI region aggregated glacier volume projections of three glacier models using all to us available GCMs until 2300 from CMIP5 and CMIP6. 
 
-|![CMIP6 GCMs until 2300](https://hackmd.io/_uploads/rkc3xrDTh.png)|
-|![CMIP5 GCMs until 2300](https://hackmd.io/_uploads/Bkp9UA_a2.png)|
+|![CMIP6 GCMs until 2300](https://hackmd.io/_uploads/rkc3xrDTh.png)
+![CMIP5 GCMs until 2300](https://hackmd.io/_uploads/Bkp9UA_a2.png)|
 |:--:| 
 | *Figure 1: Global mean temperature changes of used CMIP6 and CMIP5 GCMs until 22300. For reference, the grey lines, represent the gcm ensemble until 2100.* |
 
@@ -43,9 +43,9 @@ In the folder, [figures/]([figures/), you can find different figure drafts and a
 ## Some details to understand the figures
 #### submitted figures for the ICCI report: [figures/main_figures_with_uncertainties/median_glac_models](figures/main_figures_with_uncertainties/median_glac_models) 
 
-|![Example Figure](figures/main_figures_with_uncertainties/median_glac_models/png/icci_report_2023_median_lowess_predi_oggm_glogem_pygem_temp_levels_global_v3_boxplot.png)|
+|![Figure 2](figures/main_figures_with_uncertainties/median_glac_models/png/icci_report_2023_median_lowess_predi_oggm_glogem_pygem_temp_levels_global_v3_boxplot.png)|
 |:--:| 
-|*Example Figure: Global remaining glacier volume until 2300 relative to the year 2020. The colors of the lines describe the different global mean temperature changes (2071-2100 vs pre-industriel) of the experiments. Black lines denote the past evolution from 2000-2019. The thick horizontal lines give for different temperature levels the best estimates of remaining glacier ice in 2100 and 2300. The boxplots describe the uncertainties (median, 50%-ile range, 90%-ile range)*|
+|*Figure 2: Global remaining glacier volume until 2300 relative to the year 2020. The colors of the lines describe the different global mean temperature changes (2071-2100 vs pre-industriel) of the experiments. Black lines denote the past evolution from 2000-2019. The thick horizontal lines give for different temperature levels the best estimates of remaining glacier ice in 2100 and 2300. The boxplots describe the uncertainties (median, 50%-ile range, 90%-ile range)*|
 
 **Longer description:**
 
