@@ -1,9 +1,0 @@
-﻿
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-old_jupyter_notebooks/*.ipynb
-
-
-
