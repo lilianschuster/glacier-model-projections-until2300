@@ -21,15 +21,14 @@ In addition, please cite the individual glacier models: [PyGEM-OGGM, Rounce et a
 ----
 
 The used GCMs are shown below:
-
-|![CMIP6 GCMs until 2300](https://hackmd.io/_uploads/rkc3xrDTh.png)|
+ 
+|![CMIP5 and CMIP6 GCMs until 2300](https://cluster.klima.uni-bremen.de/~oggm/oggm-standard-projections/analysis_notebooks/gcm_global_colors_by_temp_change_2100_2300.png)|
 |:--:| 
-|![CMIP5 GCMs until 2300](https://hackmd.io/_uploads/Bkp9UA_a2.png)|
-| *Figure 1: Global mean temperature changes of used CMIP6 and CMIP5 GCMs until 2300. For reference, the grey lines represent the GCM ensemble until 2100.* |
+| *Figure 1: Global mean temperature changes of used CMIP5 and CMIP6 GCMs until 2300. For reference, additional GCMs going only until 2100 are represented aswell. The notebook to extract global mean temperatures and these figures is [here](https://nbviewer.org/urls/cluster.klima.uni-bremen.de/~oggm/oggm-standard-projections/analysis_notebooks/global_gcm_climate_cmip6_cmip5.ipynb). A list of the names of the used GCM until 2300 is available under these links for [CMIP5](https://cluster.klima.uni-bremen.de/~oggm/cmip5-ng/gcm_table_2300.html) and [CMIP6](https://cluster.klima.uni-bremen.de/~oggm/cmip6/gcm_table_2300.html).* |
 
 
 
-We have saved the aggregated output in csv-files in subfolders inside of [glacier_model_csv_files/](glacier_model_csv_files/) for every RGI region or globally. In every csv file, all GCM projections from one scenario (e.g. `ssp370.csv`) are given as different columns, where each row shows one year from 2000 until 2300 (2000 means glacier state from January 1st 2000). Attention: some GCM names in the csv files of some glacier models have only upper letters. The folder structure is the following: `{glac_model}/{var}/{cmip}/{year}/RGI{id}/{scenario}.csv`
+We have saved the aggregated output in csv files in subfolders inside of [glacier_model_csv_files/](glacier_model_csv_files/) for every RGI region or globally. In every csv file, all GCM projections from one scenario (e.g. `ssp370.csv`) are given as different columns, where each row shows one year from 2000 until 2300 (2000 means glacier state from January 1st 2000). Attention: some GCM names in the csv files of some glacier models have only upper letters. The folder structure is the following: `{glac_model}/{var}/{cmip}/{year}/RGI{id}/{scenario}.csv`
 - {glac_model} is the glacier model, e.g. GloGEM
 - {var} is volume in m3 (area will be added soon)
 - {cmip} is CMIP5 or CMIP6
@@ -41,14 +40,14 @@ Note that we have excluded connectivity level 2 glaciers in RGI region 05 (same 
 
 
 
-In the folder, [figures/]([figures/), you can find different figure drafts and additional analysis figures that were created for the ICCI State of the Cryosphere report. All figures have been plotted by the [final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb notebook](final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb).
+In the folder, [figures/]([figures/), you can find different figure drafts and additional analysis figures that were created for the [ICCI State of the Cryosphere report](https://iccinet.org/statecryo2022/). All figures have been plotted by the [final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb notebook](final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb).
 
 
 
 ## Some details to understand the figures
 #### submitted figures for the ICCI report: [figures/main_figures_with_uncertainties/median_glac_models](figures/main_figures_with_uncertainties/median_glac_models) 
 
-|![Figure 2](figures/main_figures_with_uncertainties/median_glac_models/png/icci_report_2023_median_lowess_predi_oggm_glogem_pygem_temp_levels_global_v3_boxplot.png)|
+|![Figure 2](figures/main_figures_with_uncertainties/median_glac_models/png/icci_report_2023_median_lowess_predi_oggm_glogem_pygem_temp_levels_Glaciers-globally_v3_boxplot.png)|
 |:--:| 
 |*Figure 2: Global remaining glacier volume until 2300 relative to 2020. The colors of the lines describe the different global mean temperature changes (2071-2100 vs pre-industrial) of the experiments. Black lines denote the past evolution from 2000-2019. The thick horizontal lines in 2100 and 2300 give the best estimates of remaining glacier ice for different global temperature levels in 2100. The boxplots describe the uncertainties (median, 50%-ile range, 90%-ile range)*|
 
@@ -87,12 +86,16 @@ As fitting approach, we chose the “LOWESS” smoothing:
     - The computation of the fits for every "frac" option was done by the python script [lowess_percentile_interval_fit_per_region.py](lowess_percentile_interval_fit_per_region.py) and was run on the OGGM cluster (using [slurm_lowess_percentile_interval.slurm](slurm_lowess_percentile_interval.slurm), as it takes quite long. The outcome is aggregated in the file [lowess_fit_stats_oct29_predi_all_it1.csv](lowess_fit_stats_oct29_predi_all_it1.csv) and is loaded when running the [plotting notebook](final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb).
     - for some regions, we had to use expert knowledge (decided by Fabien Maussion and Lilian Schuster). In the folder [figures/appendix_fracs/](figures/appendix_fracs/), you can see the effect of the "frac" tuning parameters, and we highlighted the chosen "frac" tuning parameter. Note that we had to replace values below zero with zero in some cases. 
 
+|<img src="figures/appendix_fit/lowess_predi_exp_fit_oggm_glogem_pygem_temp_levels_global_v3.png" width=50% height=50%>|
+|:--:|
+|*Figure 3: The resulting chosen lowess fit with percentile intervals of global remaining glacier ice vs global temperature change for the year 2100 and 2300. We also show an exponential fit for a comparison. The same analysis for other regions is in [figures/appendix_fit/](figures/appendix_fit/).*|
+
 
 We have also tried/are trying the following approaches:
 
-- option 2 “exp”:
-    - exponential decaying fit. It is not perfect, but it is simple and complies with the physical constraints. However, we assume an “exponential decay of some order”, i.e., in +1.5°C, the predicted remaining ice is larger than for option 2. We have not calculated uncertainty estimates, but there is a way to estimate similar uncertainties as in the lowess option. The exponential decay fits are also shown in the fitting figures of [figures/appendix_fit/](figures/appendix_fit/) but are not used anywhere else. 
-- option 3 GPR emulator (not yet available, work in process):
+- option 2: exponential decaying fit
+    - The fit is not perfect, but it is simple and complies with the physical constraints. However, we assume an “exponential decay of some order”, i.e., in +1.5°C, the predicted remaining ice is larger than for option 2. We have not calculated uncertainty estimates, but there is a way to estimate similar uncertainties as in the lowess option. The exponential decay fits are also shown in the fitting figures of [figures/appendix_fit/](figures/appendix_fit/) but are not used anywhere else. 
+- option 3: GPR emulator (not yet available, work in process)
     - We are working with Salma Barkauoi to use a more sophisticated approach (Gaussian Process Regression fit emulators) that complies with the physical constraints. These emulators might work for every single year, allowing us to draw a best estimate projection line with uncertainties for every temperature level (but this is still a work in process). 
 
 #### Other figure variants
