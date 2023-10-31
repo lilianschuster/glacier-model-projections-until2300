@@ -86,7 +86,7 @@ As fitting approach, we chose the “LOWESS” smoothing:
     - The computation of the fits for every "frac" option was done by the python script [lowess_percentile_interval_fit_per_region.py](lowess_percentile_interval_fit_per_region.py) and was run on the OGGM cluster (using [slurm_lowess_percentile_interval.slurm](slurm_lowess_percentile_interval.slurm), as it takes quite long. The outcome is aggregated in the file [lowess_fit_stats_oct29_predi_all_it1.csv](lowess_fit_stats_oct29_predi_all_it1.csv) and is loaded when running the [plotting notebook](final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb).
     - for some regions, we had to use expert knowledge (decided by Fabien Maussion and Lilian Schuster). In the folder [figures/appendix_fracs/](figures/appendix_fracs/), you can see the effect of the "frac" tuning parameters, and we highlighted the chosen "frac" tuning parameter. Note that we had to replace values below zero with zero in some cases. 
 
-![Figure 3](figures/appendix_fit/lowess_predi_exp_fit_oggm_glogem_pygem_temp_levels_global_v3.png){width=20%}|
+|<img src="figures/appendix_fit/lowess_predi_exp_fit_oggm_glogem_pygem_temp_levels_global_v3.png" width=30% height=30%>|
 |:--:|
 |*Figure 3: The resulting chosen lowess fit with percentile intervals of global remaining glacier ice vs global temperature change for the year 2100 and 2300. We also show an exponential fit for a comparison. The same analysis for other regions is in [figures/appendix_fit/](figures/appendix_fit/).|
 
