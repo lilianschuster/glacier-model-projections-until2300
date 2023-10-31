@@ -5,6 +5,7 @@
 Global and regionally aggregated glacier volume projections until 2300.
 
 If you use the data or the figures, please cite the dataset and the figures as following:
+
 *Schuster, L., Huss, M., Maussion, F., Rounce, D., & Tober, B. S. (2023). lilianschuster/glacier-model-projections-until2300: v1.0 [Data set]. Zenodo. https://zenodo.org/doi/10.5281/zenodo.10055416*
 
 In addition, please cite the individual glacier models: [PyGEM-OGGM, Rounce et al., 2023](https://doi.org/10.1126/science.abo1324), [OGGM, Maussion et al., 2019](https://doi.org/10.5194/gmd-12-909-2019), and [GloGEM, Huss and Hock, 2015](https://doi.org/10.3389/feart.2015.00054). We also recommend to refer to the CMIP option(s) that you are using.
@@ -33,7 +34,7 @@ We used three widely used and peer-reviewed large scale glacier models:
 
 We forced the glacier models with GCMs from the CMIP5 and CMIP6 ensembles shown below:
  
-|![CMIP5 and CMIP6 GCMs until 2300](https://cluster.klima.uni-bremen.de/~oggm/oggm-standard-projections/analysis_notebooks/gcm_global_colors_by_temp_change_2100_2300.png)|
+|![CMIP5 and CMIP6 GCMs until 2300](figures/gcm_global_colors_by_temp_change_2100_2300.png)|
 |:--:| 
 | *Figure 2: Global mean temperature changes of used CMIP5 and CMIP6 GCMs until 2300. For reference, additional GCMs going only until 2100 are shown aswell. The notebook to extract global mean temperatures and these figures is [here](https://nbviewer.org/urls/cluster.klima.uni-bremen.de/~oggm/oggm-standard-projections/analysis_notebooks/global_gcm_climate_cmip6_cmip5.ipynb). A list of the names of the used GCMs until 2300 is available under these links for [CMIP5](https://cluster.klima.uni-bremen.de/~oggm/cmip5-ng/gcm_table_2300.html) and [CMIP6](https://cluster.klima.uni-bremen.de/~oggm/cmip6/gcm_table_2300.html).* |
 
