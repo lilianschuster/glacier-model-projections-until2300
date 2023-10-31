@@ -6,7 +6,7 @@ Global and regionally aggregated glacier volume projections until 2300.
 
 If you use the data or the figures, please cite the dataset and the figures as following:
 
-*Schuster, L., Huss, M., Maussion, F., Rounce, D. R., & Tober, B. S. (2023). lilianschuster/glacier-model-projections-until2300: v1.0 [Data set]. Zenodo. https://zenodo.org/doi/10.5281/zenodo.10055416*
+*Schuster, L., Huss, M., Maussion, F., Rounce, D. R., & Tober, B. S. (2023). lilianschuster/glacier-model-projections-until2300: v1.0 [Dataset]. Zenodo. https://zenodo.org/doi/10.5281/zenodo.10055416*
 
 In addition, please cite the individual glacier models: [PyGEM-OGGM, Rounce et al., 2023](https://doi.org/10.1126/science.abo1324), [OGGM, Maussion et al., 2019](https://doi.org/10.5194/gmd-12-909-2019), and [GloGEM, Huss and Hock, 2015](https://doi.org/10.3389/feart.2015.00054). We also recommend to refer to the CMIP option(s) that you are using.
 
