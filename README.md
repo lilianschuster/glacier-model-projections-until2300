@@ -28,7 +28,7 @@ The used GCMs are shown below:
 
 
 
-We have saved the aggregated output in csv-files in subfolders inside of [glacier_model_csv_files/](glacier_model_csv_files/) for every RGI region or globally. In every csv file, all GCM projections from one scenario (e.g. `ssp370.csv`) are given as different columns, where each row shows one year from 2000 until 2300 (2000 means glacier state from January 1st 2000). Attention: some GCM names in the csv files of some glacier models have only upper letters. The folder structure is the following: `{glac_model}/{var}/{cmip}/{year}/RGI{id}/{scenario}.csv`
+We have saved the aggregated output in csv files in subfolders inside of [glacier_model_csv_files/](glacier_model_csv_files/) for every RGI region or globally. In every csv file, all GCM projections from one scenario (e.g. `ssp370.csv`) are given as different columns, where each row shows one year from 2000 until 2300 (2000 means glacier state from January 1st 2000). Attention: some GCM names in the csv files of some glacier models have only upper letters. The folder structure is the following: `{glac_model}/{var}/{cmip}/{year}/RGI{id}/{scenario}.csv`
 - {glac_model} is the glacier model, e.g. GloGEM
 - {var} is volume in m3 (area will be added soon)
 - {cmip} is CMIP5 or CMIP6
@@ -93,7 +93,7 @@ As fitting approach, we chose the “LOWESS” smoothing:
 
 We have also tried/are trying the following approaches:
 
-- option 2: exponential decaysing fit
+- option 2: exponential decaying fit
     - The fit is not perfect, but it is simple and complies with the physical constraints. However, we assume an “exponential decay of some order”, i.e., in +1.5°C, the predicted remaining ice is larger than for option 2. We have not calculated uncertainty estimates, but there is a way to estimate similar uncertainties as in the lowess option. The exponential decay fits are also shown in the fitting figures of [figures/appendix_fit/](figures/appendix_fit/) but are not used anywhere else. 
 - option 3: GPR emulator (not yet available, work in process)
     - We are working with Salma Barkauoi to use a more sophisticated approach (Gaussian Process Regression fit emulators) that complies with the physical constraints. These emulators might work for every single year, allowing us to draw a best estimate projection line with uncertainties for every temperature level (but this is still a work in process). 
