@@ -9,14 +9,20 @@ from sklearn.preprocessing import MinMaxScaler
 
 from scipy.optimize import curve_fit
 import sys
-
 import oggm
-#_file_cmip5 = oggm.utils.file_downloader('https://cluster.klima.uni-bremen.de/~oggm/oggm-standard-projections/analysis_notebooks/Global_mean_temp_deviation_2071_2100_2081_2100_2271_2300_2281_2300_rel_1850_1900_cmip5_gcms.csv', reset=True)
-#_file_cmip6 = oggm.utils.file_downloader('https://cluster.klima.uni-bremen.de/~oggm/oggm-standard-projections/analysis_notebooks/Global_mean_temp_deviation_2071_2100_2081_2100_2271_2300_2281_2300_rel_1850_1900_cmip6_gcms.csv', reset=True)
+# load global mean temperature change files 
+# note that the global mean temperature (GMT) changes have been computed by using the assumption that GMT changed from 1850-1900 to 1986-2005 by 0.63°C 
+# (this is the assumption used by the IPCC SROCC -> --> https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/
+# IPCC, 2019: Summary for Policymakers. In: IPCC Special Report on the Ocean and Cryosphere in a Changing Climate [H.-O. Pörtner, D.C. Roberts, V. Masson-Delmotte,
+# P. Zhai, M. Tignor, E. Poloczanska, K. Mintenbeck, A. Alegría, M. Nicolai, A. Okem, J. Petzold, B. Rama, N.M. Weyer (eds.)]. In press.
+# -> future follow-up studies should use the updated estimates (e.g. IPCC AR6 WG1 updated the methods and found a GMT change of 0.69°C from 1850-1900 and 1986-2005)
 _file_cmip5 = '/home/www/oggm/oggm-standard-projections/analysis_notebooks/Global_mean_temp_deviation_2071_2100_2081_2100_2271_2300_2281_2300_rel_1850_1900_cmip5_gcms.csv'
 pd_cmip5_temp_ch_2100 = pd.read_csv(_file_cmip5, index_col=0)
 pd_cmip5_temp_ch_2100['cmip'] = 'CMIP5'
 _file_cmip6 = '/home/www/oggm/oggm-standard-projections/analysis_notebooks/Global_mean_temp_deviation_2071_2100_2081_2100_2271_2300_2281_2300_rel_1850_1900_cmip6_gcms.csv'
+# these files are also available under: 
+# https://cluster.klima.uni-bremen.de/~oggm/oggm-standard-projections/analysis_notebooks/Global_mean_temp_deviation_2071_2100_2081_2100_2271_2300_2281_2300_rel_1850_1900_cmip5_gcms.csv'
+# https://cluster.klima.uni-bremen.de/~oggm/oggm-standard-projections/analysis_notebooks/Global_mean_temp_deviation_2071_2100_2081_2100_2271_2300_2281_2300_rel_1850_1900_cmip6_gcms.csv'
 
 pd_cmip6_temp_ch_2100 = pd.read_csv(_file_cmip6, index_col=0)
 pd_cmip6_temp_ch_2100['cmip'] = 'CMIP6'
