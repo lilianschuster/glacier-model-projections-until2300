@@ -40,7 +40,7 @@ srun -n 1 -c "${SLURM_JOB_CPUS_PER_NODE}" /home/users/lschuster/images/oggm_2023
     python3 -m venv --system-site-packages "$OGGM_WORKDIR/oggm_env"
     source "$OGGM_WORKDIR/oggm_env/bin/activate"
     pip install moepy
-    python3 lowess_percentile_interval_fit_per_region.py $1 $2
+    python3 v2023_lowess_percentile_interval_fit_per_region.py $1 $2
 EOF
 
 
