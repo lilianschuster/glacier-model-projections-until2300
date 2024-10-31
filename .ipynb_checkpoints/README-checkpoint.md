@@ -12,13 +12,15 @@ In addition, please cite the individual glacier models: [PyGEM-OGGM, Rounce et a
 
 ## Figures
 
-In [figures]([figures/), you will find figures and additional analyses that were created for the ICCI State of the Cryosphere report.
+**Update: new simplified figures for the ICCI State of the Cryosphere report 2024 are in [v2024_figures](v2024_figures) and their simplified methods are described in [v2024_README.md](v2024_README.md). Below, the general methods and those methods specific to the 2023 version are described.**
 
-|![Figure:](figures/main_figures_with_uncertainties/median_glac_models/png/final_draft_icci_2023/icci_report_2023_median_lowess_predi_oggm_glogem_pygem_temp_levels_Glaciers-globally_boxplot_v3_all.png)|
+In [v2023_figures]([v2023_figures/), you will find figures and additional analyses that were created for the ICCI State of the Cryosphere report 2023 in 
+
+|![Figure:](v2023_figures/main_figures_with_uncertainties/median_glac_models/png/final_draft_icci_2023/icci_report_2023_median_lowess_predi_oggm_glogem_pygem_temp_levels_Glaciers-globally_boxplot_v3_all.png)|
 |:--:|
 |*Figure 1: Global glacier volume until 2300, relative to 2020. The lines' colors correspond to the global temperature change (2071-2100 vs pre-industrial) of the respective climate model. Black lines denote the past evolution from 2000-2019. The thick horizontal scales overlaid in 2100 and 2300 indicate our best estimate of remaining glacier volume for each global temperature level in 2100. The boxplots indicate the uncertainties (median, 50%-ile range, 90%-ile range).*|
 
-Code: [final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb notebook](final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb).
+Code: [v2023_final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb notebook](v2023_final_visualise_glacier_projections_until_2300_lowess_percentile_intervals.ipynb).
 
 
 ## Methods
