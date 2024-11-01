@@ -16,7 +16,7 @@ For those familiar with the 2023 figures, please note that the new figures no lo
 ***Short description of the new method:*** 
 To project glacier mass until 2300, we grouped climate scenarios (combinations of climate models and emission scenarios) into clusters corresponding to global temperature changes of **1.5±0.2°C, 2.2±0.2°C, and 2.8±0.2°C** by 2100 (average 2071-2100). We display the median global temperature for each group. These specific temperature levels (+1.5, +2.2, and +2.8°C) were selected because the median temperature within each ±0.2°C range aligns with the chosen target.
 
-*Small methodological update: For v2024, we use [IPCC AR6](https://www.ipcc.ch/report/sixth-assessment-report-cycle/) rather than the [IPCC SROCC](https://www.ipcc.ch/srocc/) as used in v2023 to estimate past warming between 1850-1900 and 1986-2005. Thus, v2024 assumes a warming of 0.69°C between 1850-1900 and 1986-2005, compared to the 0.63°C warming used in v2023.*
+*Small methodological update: For v2024, we use [IPCC AR6 WG1](https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_1_12.png) rather than the [IPCC SROCC, 2019](https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/) as used in v2023 to estimate past warming between 1850-1900 and 1986-2005. Thus, v2024 assumes a warming of 0.69°C between 1850-1900 and 1986-2005, compared to the 0.63°C warming used in v2023.*
 
 Code for all v2024 figures is available at: [v2024_simplified_visualisation_choice.ipynb.ipynb notebook](v2024_simplified_visualisation_choice.ipynb).
 ----
