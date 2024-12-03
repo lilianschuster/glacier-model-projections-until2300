@@ -103,7 +103,7 @@ We have also tried/are trying the following approaches:
 
 **Other figure variants**
 
-- In [v2023_figures/main_figures_with_uncertainties/all_glac_models](v2023_figures/median_glac_models), we show a figure variant where no median over the glacier models is taken. Instead, every glacier model is shown individually as a line, i.e., there are 60 instead of 24 lines. For the temperature-dependent fit, we still use the same approach as above.
-- In [v2023_figures/main_figures_without_uncertainties/]([v2023_figures/main_figures_without_uncertainties/), we show a figure variant where the uncertainty estimates are not shown (no boxplots).
+- In [v2023_figures/main_figures_with_uncertainties/all_glac_models](v2023_figures/main_figures_with_uncertainties), we show a figure variant where no median over the glacier models is taken. Instead, every glacier model is shown individually as a line, i.e., there are 60 instead of 24 lines. For the temperature-dependent fit, we still use the same approach as above.
+- In [v2023_figures/main_figures_without_uncertainties/](v2023_figures/main_figures_without_uncertainties/), we show a figure variant where the uncertainty estimates are not shown (no boxplots).
 
 
