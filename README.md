@@ -14,7 +14,7 @@ In addition, please cite the individual glacier models: [PyGEM-OGGM, Rounce et a
 
 **Update: new simplified figures for the ICCI State of the Cryosphere report 2024 are in [v2024_figures](v2024_figures) and their simplified methods are described in [v2024_README.md](v2024_README.md). Below, the general methods and those methods specific to the 2023 version are described.**
 
-In [v2023_figures]([v2023_figures/), you will find figures and additional analyses that were created for the ICCI State of the Cryosphere report 2023 in 
+In [v2023_figures](v2023_figures/), you will find figures and additional analyses that were created for the ICCI State of the Cryosphere report 2023 in 
 
 |![Figure:](v2023_figures/main_figures_with_uncertainties/median_glac_models/png/final_draft_icci_2023/icci_report_2023_median_lowess_predi_oggm_glogem_pygem_temp_levels_Glaciers-globally_boxplot_v3_all.png)|
 |:--:|
